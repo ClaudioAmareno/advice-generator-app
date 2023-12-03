@@ -1,0 +1,233 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+}
+
+.card-wrapper {
+  margin: 1.25rem 0.9375rem 8.125rem 0.9375rem;
+  padding: 0rem 1.5625rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 0.5rem;
+}
+
+.advice-number {
+  margin: 2.5rem 0rem 1.25rem 0rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+}
+
+.random-advice {
+  margin: 0rem 0rem 1.5625rem 0rem;
+  font-size: 1.5rem;
+  color: hsl(193, 38%, 86%);
+}
+
+.picture-desktop {
+  display: none;
+}
+
+.picture-mobile {
+  margin-bottom: 4.0625rem;
+}
+
+.btn {
+  position: absolute;
+  height: 4.0625rem;
+  width: 4.0625rem;
+  bottom: -1.875rem;
+  align-self: center;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  transition: all 0.5s;
+  transition-property: transform, box-shadow;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0rem 0rem 3.125rem hsl(150, 100%, 66%);
+  transform: scale(1.2);
+}
+
+@media (min-width: 576px) {
+  .card-wrapper {
+    margin: 1.25rem 3.75rem 8.125rem 3.75rem;
+    padding: 0rem 3.125rem;
+  }
+  .random-advice {
+    margin: 0rem 0rem 1.5625rem 0rem;
+    line-height: 2.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .card-wrapper {
+    margin: 1.25rem 3.125rem 8.125rem 3.125rem;
+    padding: 2.5rem 1.5625rem;
+  }
+  .advice-number {
+    margin: 2.5rem 0rem 2.5rem 0rem;
+    font-size: 0.875rem;
+  }
+  .random-advice {
+    margin: 0rem 3.125rem 3.125rem 3.125rem;
+    font-size: 1.625rem;
+  }
+  .icon-dice {
+    transform: scale(1.2);
+  }
+  .btn {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .card-wrapper {
+    margin: 1.25rem 5rem 8.125rem 5rem;
+    padding: 0rem 1.5625rem;
+  }
+  .advice-number {
+    margin: 2.5rem 0rem 1.25rem 0rem;
+    font-size: 1.125rem;
+  }
+  .random-advice {
+    margin: 0rem 5rem 3.125rem 5rem;
+    font-size: 2rem;
+    line-height: 2.875rem;
+  }
+  .btn {
+    height: 5.625rem;
+    width: 5.625rem;
+  }
+  .icon-dice {
+    transform: scale(1.4);
+  }
+  .picture-desktop {
+    display: block;
+    margin: 0rem 5rem 6.25rem 5rem;
+  }
+  .picture-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .card-wrapper {
+    margin: 6.5625rem 28.125rem 8.125rem 28.125rem;
+    padding: 0.5rem 1.5625rem;
+    border-radius: 0.75rem;
+  }
+  .advice-number {
+    padding-top: 2.5rem;
+    margin: 0rem 0rem 1.5625rem 0rem;
+    font-size: 0.875rem;
+  }
+  .random-advice {
+    margin: 0rem 1.25rem 2.5rem 1.25rem;
+    font-size: 1.625rem;
+    line-height: 2.375rem;
+    letter-spacing: 0.03125rem;
+  }
+  .picture-desktop {
+    margin: 0rem 5.9375rem 4.375rem 5.9375rem;
+    transform: scale(1.5);
+  }
+  .btn {
+    height: 4.0625rem;
+    width: 4.0625rem;
+  }
+  .icon-dice {
+    transform: scale(1);
+  }
+}
+@media (min-width: 1600px) {
+  .card-wrapper {
+    max-width: 31.25rem;
+  }
+}/*# sourceMappingURL=main.css.map */
