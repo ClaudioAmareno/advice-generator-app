@@ -5,7 +5,7 @@ const btn = document.querySelector('.btn')
 const URL = 'https://api.adviceslip.com/advice'
 
 btn.addEventListener("click", () => {
-    fetch(URL)
+    fetch(URL, {cache: 'no-cache'})
         .then(res => res.json())
         .then(data => {
             randomAdvice.textContent = ("src", data.slip.advice);
